@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <meta name="author" content="Julio Salguero">
+    <meta name="email" content="juliokaiser04@gmail.com">
+    <meta name="phone" content="502-5949-2093">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap" rel="stylesheet">
+    <!-- style css -->
+    <link rel="stylesheet" href="style-cclt.css">
+</head>
+<body>
+    <!-- 
+        cclt = calculator.
+        btn = button.
+        num = number
+        op = operator
+        col = column.
+     -->
+    <div class="container">
+        <div class="cclt">
+            <div class="cclt__display">
+                <div id="previous-value">Hello!</div>
+                <div id="current-value">Welcome!</div>
+            </div>
+            <button class="cclt__btn cclt__btn--col-2" onclick="display.deleteAll();">C</button>
+            <button class="cclt__btn" onclick="display.delete();">&Larr;</button>
+            <button class="cclt__btn cclt__btn--op" value="dividir">/</button>
+            <button class="cclt__btn cclt__btn--num">7</button>
+            <button class="cclt__btn cclt__btn--num">8</button>
+            <button class="cclt__btn cclt__btn--num">9</button>
+            <button class="cclt__btn cclt__btn--op" value="multiplicar">X</button>
+            <button class="cclt__btn cclt__btn--num">4</button>
+            <button class="cclt__btn cclt__btn--num">5</button>
+            <button class="cclt__btn cclt__btn--num">6</button>
+            <button class="cclt__btn cclt__btn--op" value="restar">-</button>
+            <button class="cclt__btn cclt__btn--num">1</button>
+            <button class="cclt__btn cclt__btn--num">2</button>
+            <button class="cclt__btn cclt__btn--num">3</button>
+            <button class="cclt__btn cclt__btn--op" value="sumar">+</button>
+            <button class="cclt__btn cclt__btn--num cclt__btn--col-2">0</button>
+            <button class="cclt__btn cclt__btn--num">.</button>
+            <button class="cclt__btn cclt__btn--op" value="igual">=</button>
+        </div>
+    </div>
+
+    <!-- script js -->
+    <script src="CcltDisplay.js" type="text/javascript"></script>
+    <script src="Cclt.js" type="text/javascript"></script>
+    <script src="appCclt.js" type="text/javascript" defer></script>
+    
+</body>
+</html>
